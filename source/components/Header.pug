@@ -1,0 +1,89 @@
+header.header
+  .header__layout
+    .header__inner
+      .header__images-phone
+        img(src='images/phone.png' alt="phone" width="924" height="803" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.3s").img-header
+      .header__images-watch
+        img(src='images/watch.png' alt="watch" width="518" height="889" class="wow slideInRight" data-wow-duration="1s" data-wow-delay="0.3s").img-header
+      .wrapper.header__wrapper
+        .header__container
+          .header__logo
+            img(src='images/logo.png' alt="iPochino" width="153" height="65").logo
+          .header__description iPochino — франшиза сети технологичных
+            br
+            | сервисных центров по ремонту техники
+          .header__phone
+            .phone
+              .phone__number(class="wow tada" data-wow-duration="1s" data-wow-delay="0.3s")
+                a.phone__link(href="tel:+74951206030") +7 (495) 120-60-30
+              a(href="#" data-remodal-target="modal-1").phone__order Заказать звонок
+        .header__info
+          .info
+            h1.info__title Франшиза сервисных центров iPochino
+              br
+              |— это бизнес на 
+              span.info__title-red ремонте устройств с ios
+                br
+                | и Android. 
+                span.info__title-normal А в России более 80 млн активно используемых гаджетов
+            .info__description Разместите островок в торговом центре и зарабатывайте
+              br
+              | от 150 000 до 300 000 рублей прибыли ежемесячно
+            .info__plan
+              .plan
+                ul.plan__list
+                  li.plan__item
+                    .plan__item-icon
+                      img(src='images/area.png' alt="area" width="39" height="39").icon
+                    .plan__item-description Достаточно от 10 до 20 м2 
+                      br
+                      | под островок
+                  li.plan__item
+                    .plan__item-icon
+                      img(src='images/city.png' alt="city" width="36" height="36").icon
+                    .plan__item-description Даже для такого формата
+                      br
+                      | мы оказываем помощь по поиску
+                      br
+                      | подходящей площадки
+                  li.plan__item
+                    .plan__item-icon
+                      img(src='images/location.png' alt="location" width="36" height="36").icon
+                    .plan__item-description Можно открыть в городе
+                      br
+                      | с населением от 50 тыс. 
+                      br
+                      | человек.
+        .header__feedback
+          .feedback
+            .feedback__description
+              .feedback__description-red 7 из 10 обратившихся оставят технику на ремонт.
+              .feedback__description-black Как такое возможно?
+                br
+                | Узнайте из презентации и финансовой модели iPochino
+            form.feedback__form
+                .feedback__input
+                  .input
+                    .input__icon
+                      img(src='images/phone-input.png' alt="input-icon" width="17" height="17").input-icon
+                    input(type="tel" data-inputmask="'mask': '+7 (999) 999-9999'" placeholder="+7 (___) ___-____").input__field
+                .feedback__input
+                  .input
+                    .input__icon
+                      img(src='images/mail-input.png' alt="input-icon" width="18" height="14").input-icon
+                    input(type="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" placeholder="bestpartner@mail.ru").input__field
+                .feedback__input
+                  .input
+                    .input__icon
+                      img(src='images/user-input.png' alt="input-icon" width="18" height="22").input-icon
+                    input(type="text" placeholder="Сантурян Тигран").input__field
+                .feedback__button
+                  button.btn(type="submit") Получить информацию
+            .feedback__agree
+                  | Нажимая кнопку «Получить информацию», 
+                  | я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных 
+                  br
+                  | на условиях и для целей, определяемых Политикой конфиденциальности
+          .feedback__image(class="wow wobble" data-wow-duration="1s" data-wow-delay="1s")
+            img(src='images/feedback-layer.png' alt="feedback-layer" width="115" height="202").feedback-image
+  include ../components/Modal

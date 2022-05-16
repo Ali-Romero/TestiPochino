@@ -1,0 +1,202 @@
+.header
+  &__layout
+    background-image: url('../images/bg.png')
+    background-repeat: repeat
+
+    +above($breakpoints.xxl)
+      background-repeat: repeat-x
+
+  &__inner
+    position: relative
+    padding-top: 20px
+
+  &__wrapper
+    position: relative
+    z-index: 10
+
+  &__images-phone
+    display: none
+
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      left: 0
+      top: 127px
+      right: 0
+      z-index: 5
+
+  &__images-watch
+    display: none
+
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      top: 101px
+      right: -34px
+      z-index: 5
+
+  &__container
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin-bottom: 47px
+
+    +above($breakpoints.md)
+      flex-direction: row
+      justify-content: space-around
+      margin-bottom: 47px
+
+    +above($breakpoints.xl)
+      justify-content: space-between
+
+  &__logo
+    +above($breakpoints.xl)
+      padding-left: 15px
+
+  &__description
+    font-size: 20px
+    line-height: 27px
+    color: $color-white
+    text-align: center
+    padding-top: 15px
+
+    +above($breakpoints.xl)
+      padding-left: 85px
+
+  &__feedback
+    +above($breakpoints.xxl)
+      margin-left: 17px
+      margin-right: -15px
+
+  &__phone
+    padding-top: 17px
+    margin-right: -9px
+
+.phone
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  &__link
+    color: $color-white
+    font-size: 26px
+    font-weight: bold
+    padding: 0 20px
+  &__order
+    color: $color-red
+    border-bottom: 1px solid $color-red
+    line-height: 30px
+    font-size: 14px
+    text-decoration: none
+    transition: border 0.2s
+
+    &:hover
+      border-color: transparent
+
+.img-header
+  display: block
+
+.info
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  &__title
+    font-size: 21px
+    line-height: 30px
+    font-family: "Gotham-Pro-medium"
+    color: $color-white
+    letter-spacing: 1.1px
+    font-weight: 800
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 34px
+
+    +above($breakpoints.md)
+      font-size: 30px
+      line-height: 39px
+
+    +above($breakpoints.lg)
+      font-size: 35px
+      line-height: 45px
+
+    +above($breakpoints.xl)
+      letter-spacing: 1.2px
+      padding-left: 41px
+      font-size: 40px
+      line-height: 49px
+
+  &__title-red
+    background-color: $color-red
+
+  &__title-normal
+    text-transform: none
+
+  &__description
+    color: $color-white
+    margin-bottom: 30px
+    font-size: 18px
+    line-height: 28px
+    text-align: center
+
+    +above($breakpoints.lg)
+      margin-bottom: 58px
+      font-size: 24px
+      line-height: 36px
+      padding-left: 28px
+
+  &__plan
+    margin-bottom: 63px
+
+.plan
+  &__list
+    display: flex
+    justify-content: space-around
+    flex-direction: column
+
+    +above($breakpoints.lg)
+      flex-direction: row
+      justify-content: space-between
+
+  &__item
+    display: flex
+    margin-bottom: 20px
+
+    &:last-child
+      margin-bottom: 0
+
+    +above($breakpoints.lg)
+      margin-bottom: 0
+      margin-right: 41px
+
+      &:last-child
+        margin-right: 0
+
+  &__item-icon
+    margin-right: 32px
+
+  &__item-description
+    font-size: 18px
+    line-height: 24px
+    color: $color-white
+
+.input
+  position: relative
+
+  &__icon
+    position: absolute
+    pointer-events: none
+
+  &__field
+    background: none
+    border: none
+    border-bottom: 1px solid $color-grey
+    padding: 0 5px 16px 33px
+    display: block
+    width: 100%
+    outline: none
+
+  ::-webkit-input-placeholder
+    color: $color-grey
+    font-size: 16px

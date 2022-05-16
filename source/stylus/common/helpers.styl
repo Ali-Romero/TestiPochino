@@ -1,0 +1,117 @@
+.width
+  width: 100%
+
+.wrapper
+  max-width: 1180px
+  margin: 0 auto
+  padding-right: 20px
+  padding-left: 20px
+
+.feedback
+  display: inline-block
+  width: 100%
+  background-color: $color-white
+  padding: 30px
+  border-radius: 7px
+  box-shadow: 0px 14px 50px -30px #999
+  margin-bottom: -40px
+
+  +above($breakpoints.xxl)
+    margin-bottom: 0
+    padding: 40px 57px 32px 56px
+
+  &__description
+    font-family: "Gotham-Pro-medium"
+    text-align: center
+    font-size: 22px
+    line-height: 28px
+    margin-bottom: 35px
+
+    +above($breakpoints.xxl)
+      padding-left: 14px
+      font-size: 26px
+      line-height: 36px
+
+  &__description-red
+    color: $color-red
+    font-weight: bold
+
+  &__description-black
+    padding-left: 17px
+
+  &__form
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    margin-bottom: 26px
+    flex-wrap: wrap
+
+    +above($breakpoints.md)
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+
+    +above($breakpoints.xxl)
+      justify-content: space-between
+
+  &__button
+    +above($breakpoints.md)
+      margin-top: 20px
+
+    +above($breakpoints.lg)
+      margin-top: 0
+
+  &__input
+    width: 190px
+    margin-bottom: 25px
+
+    +above($breakpoints.md)
+      margin-right: 20px
+      margin-bottom: 0px
+
+  &__input-inner
+    width: 100%
+    margin-bottom: 20px
+
+  &__agree
+    text-align: center
+    font-size: 12px
+    line-height: 16px
+    color: $color-grey
+
+  &__image
+    display: none
+
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      bottom: -20px
+      right: -85px
+
+.btn
+  width: 100%
+  position: relative
+  top: 0
+  font-size: 15px
+  font-weight: bold
+  color: $color-white
+  padding: 24px 20px
+  border-radius: 4px
+  background-image: linear-gradient(90deg, #ed0787 0%, #fbb337 100%)
+  border: none
+  text-transform: uppercase
+  box-shadow: 0px -5px 0px 0px rgba(90, 22, 57, 0.2) inset
+  cursor: pointer
+
+  +above($breakpoints.xl)
+    padding: 24px 46px
+    font-size: 18px
+
+  &:hover
+    background-image: linear-gradient(90deg, #f34576 0%, #ffc852 100%)
+
+  &:active
+    top: 2px
+    background-image: linear-gradient(180deg, #bb1a59 0%, #e76446 100%)
+    box-shadow: 0px 5px 0px 0px rgba(90, 22, 57, 0.2) inset

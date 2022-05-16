@@ -1,0 +1,279 @@
+.content
+  &__wrap
+    position: relative
+
+  &__layout
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+  &__inner
+    padding-top: 117px
+    display: flex
+    justify-content: space-between
+    margin-bottom: 64px
+
+  &__info
+    font-family: "Gotham-Pro-medium"
+    max-width: 550px
+    font-size: 24px
+    font-weight: bold
+    text-align: center
+
+    +above($breakpoints.md)
+      font-size: 37px
+
+    +above($breakpoints.xxl)
+      font-size: 40px
+      text-align: start
+      margin-right: 111px
+
+  &__title
+    color: $color-red
+    margin-bottom: 46px
+    letter-spacing: 1.1px
+
+  &__title-black
+    color: black
+
+  &__info-description
+    font-family: "Gotham-Pro"
+    font-size: 16px
+    line-height: 25px
+
+    +above($breakpoints.md)
+      font-size: 18px
+      line-height: 28px
+
+  &__aside
+    display: none
+
+    +above($breakpoints.xxl)
+      display: flex
+      margin-right: -236px
+
+  &__aside-title
+    font-family: "Gotham-Pro-medium"
+    text-transform: uppercase
+    font-size: 115px
+    font-weight: bold
+    margin-top: -2px
+
+  &__aside-rotate
+    transform: rotate(180deg)
+    writing-mode: tb-rl
+    line-height: 86px
+
+  &__aside-image
+    position: absolute
+    right: -32px
+    top: 75px
+
+  &__services
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin-bottom: 68px
+
+  &__services-title
+    font-family: "Gotham-Pro-medium"
+    font-size: 22px
+    font-weight: bold
+    line-height: 1.4
+    max-width: 895px
+    text-align: center
+    margin-bottom: 39px
+
+    +above($breakpoints.md)
+      font-size: 27px
+      margin-bottom: 42px
+
+    +above($breakpoints.xxl)
+      padding-left: 49px
+      font-size: 30px
+
+  &__meta
+    margin-bottom: 103px
+
+  &__meta-title
+    font-family: "Gotham-Pro-medium"
+    font-weight: bold
+    line-height: 1.4
+    text-align: center
+    margin-bottom: 41px
+    font-size: 22px
+
+    +above($breakpoints.md)
+      font-size: 27px
+
+    +above($breakpoints.xxl)
+      font-size: 30px
+
+  &__meta-list
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+
+    +above($breakpoints.xl)
+      justify-content: space-between
+
+  &__meta-item
+    margin-bottom: 20px
+
+    +above($breakpoints.xl)
+      margin-bottom: 0
+
+  &__payment-bg
+    background-image: url('../images/payment-bg.png')
+    background-repeat: repeat
+
+    +above($breakpoints.xxl)
+      background-repeat: repeat-x
+
+  &__payment-inner
+    padding-top: 82px
+
+  &__payment-title
+    font-family: "Gotham-Pro-medium"
+    font-size: 24px
+    line-height: 36px
+    letter-spacing: 0.6px
+    font-weight: bold
+    text-align: center
+    margin-bottom: 53px
+    color: $color-white
+
+    +above($breakpoints.md)
+      font-size: 37px
+      line-height: 48px
+
+    +above($breakpoints.xxl)
+      font-size: 40px
+
+  &__payment-title-red
+    background-color: $color-red
+
+  &__payment-subtitle
+    font-size: 24px
+    font-weight: bold
+    line-height: 1.5
+    color: $color-white
+    text-align: center
+    margin-bottom: 46px
+
+  &__payment-subtitle-normal
+    font-weight: normal
+
+.payment-cards
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  margin-bottom: 47px
+
+  +above($breakpoints.xl)
+    justify-content: space-between
+
+  &__item
+    width: 354px
+    margin-bottom: 20px
+
+    +above($breakpoints.xl)
+      margin-bottom: 0
+
+.card
+  background-color: $color-white
+  padding: 30px
+
+  +above($breakpoints.sm)
+    padding: 42px 34px 13px 42px
+
+  &__list
+    display: flex
+    justify-content: space-between
+
+  &__item
+    background-color: $color-white
+
+  &__title
+    font-family: "Gotham-Pro-medium"
+    font-size: 22px
+    font-weight: bold
+    min-height: 50px
+    margin-bottom: 34px
+
+    +above($breakpoints.sm)
+      font-size: 24px
+      min-height: 80px
+      margin-bottom: 54px
+
+.card-item
+  display: flex
+  margin-bottom: 30px
+
+  +above($breakpoints.sm)
+    margin-bottom: 44px
+    padding-left: 5px
+
+  &__icon
+    margin-right: 34px
+
+  &__description
+    font-family: "Gotham-Pro-medium"
+    font-size: 18px
+
+  &__text
+    margin-right: 5px
+
+  &__price
+    font-size: 27px
+    font-weight: bold
+    margin-left: 1px
+    letter-spacing: 3px
+
+.aside-bg
+  display: block
+
+.aside-image
+  display: block
+
+.services
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+    +above($breakpoints.xl)
+      justify-content: flex-start
+
+  &__item
+    padding-left: 30px
+    width: 282px
+    margin-bottom: 20px
+
+  &__item-index
+    display: flex
+    align-items: center
+    font-size: 29.861px
+    -webkit-transform: rotate(-90deg)
+    -moz-transform: rotate(-90deg)
+    -o-transform: rotate(-90deg)
+    -ms-transform: rotate(-90deg)
+    transform: rotate(-90deg)
+
+  &__item-box
+    display: flex
+
+  &__item-inner
+    display: flex
+
+  &__item-image
+    margin-bottom: 15px
+
+  &__item-description
+    font-family: "Gotham-Pro-medium"
+    text-align: center
+    font-size: 18px
+    line-height: 1.444
+    padding-left: 8px

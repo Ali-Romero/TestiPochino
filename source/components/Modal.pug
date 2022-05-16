@@ -1,0 +1,28 @@
+.remodal(data-remodal-id='modal-1' data-remodal-options="hashTracking:false, modifier: modal-fullscreen")
+  .remodal__feedback
+    .feedback
+      .feedback__description
+        .feedback__description-black
+        | Заказать 
+        br
+        | обратный звонок
+      form.feedback__form
+          .feedback__input-inner
+            .input
+              .input__icon
+                img(src='images/phone-input.png' alt="input-icon" width="17" height="17").input-icon
+              input(type="tel" data-inputmask="'mask': '+7 (999) 999-9999'" placeholder="+7 (___) ___-____").input__field
+          .feedback__input-inner
+            .input
+              .input__icon
+                img(src='images/user-input.png' alt="input-icon" width="18" height="22").input-icon
+              input(type="text" placeholder="Сантурян Тигран").input__field
+          .feedback__button.width(data-remodal-target="modal-1")
+            button.btn.width(type="submit") Отправить
+      .feedback__agree
+            | Нажимая кнопку «Получить информацию», 
+            | я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных 
+            br
+            | на условиях и для целей, определяемых Политикой конфиденциальности
+    .remodal__feedback-close(data-remodal-action="close")
+      .remodal__feedback-close-icon x
